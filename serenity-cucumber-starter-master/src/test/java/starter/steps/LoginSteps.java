@@ -11,7 +11,7 @@ public class LoginSteps extends PageObject {
 
     @Step
     public void AbrirURl() {
-    loginPage.open();
+    loginPage.openUrl("https://opensource-demo.orangehrmlive.com");
 
 
     }

@@ -7,13 +7,15 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
-//@DefaultUrl("https://opensource-demo.orangehrmlive.com/")
+@DefaultUrl("https://opensource-demo.orangehrmlive.com/")
 
 
 
 public class LoginPage extends PageObject {
     @FindBy(id="txtUsername")
     WebElementFacade usuario;
+
+
     public void escrirUsuario(String usuario) {
         this.usuario.type(usuario);
 
