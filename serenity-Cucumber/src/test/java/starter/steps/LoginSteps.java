@@ -25,6 +25,6 @@ public class LoginSteps extends PageObject {
     }
     @Step
     public void clicLogin() {
-
+        loginPage.clicLogin();
     }
 }

@@ -9,11 +9,15 @@ import org.openqa.selenium.support.FindBy;
 
 //@DefaultUrl("https://opensource-demo.orangehrmlive.com/")
 
-
-
 public class LoginPage extends PageObject {
     @FindBy(id="txtUsername")
     WebElementFacade usuario;
+
+    public void clicLogin() {
+        $(By.id("btnLogin")).click();
+
+    }
+
     public void escrirUsuario(String usuario) {
         this.usuario.type(usuario);
 
@@ -23,4 +27,7 @@ public class LoginPage extends PageObject {
        // this.usuario.type(contrasena);
         $(By.id("txtPassword")).type(contrasena);
     }
+
+
+
 }
